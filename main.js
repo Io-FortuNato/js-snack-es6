@@ -14,3 +14,12 @@ for (let i = 1; i < bici.length; i++) {
     }
 }
 
+// risultato 
+ const risultato =
+    document.getElementById("risultato");
+    risultato.innerHTML = `
+    <p>La bici più leggera è <strong>${
+        biciLight.nome
+    }</strong></p>
+    <p>Peso: ${biciLight.peso} kg</p>
+    `;
