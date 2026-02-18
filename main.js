@@ -28,3 +28,30 @@ for (let i = 0; i < squadre.length; i++) {
         squadre[i].falliSubiti
     });
 }
+
+//stampa in html 
+const tutteSquadreDiv =
+document.getElementById("tutteSquadre");
+const soloFalliDiv = 
+document.getElementById("soloFalli")
+
+//stampa primo array
+for (let i = 0; i < squadre.length; i++) {
+    tutteSquadreDiv.innerHTML +=
+    "<p>" +
+    squadre[i].nome +
+    " - Punti: " + 
+    squadre[i].puntiFatti +
+    " - Falli subiti: " +
+    squadre[i].falliSubiti +
+    "</p>";
+}
+//stampa secondo array
+for (let i = 0; i < squadreFalli.length; i++) {
+    soloFalliDiv.innerHTML +=
+    "<p>" + 
+        squadreFalli[i].nome +
+        " - Falli subiti: " +
+        squadreFalli[i].falliSubiti +
+    "</p>";
+}
